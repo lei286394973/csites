@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}首页{% endblock %}
+
+{% block css %}
+<style>
+body{height: 100%}
+</style>
+{% endblock %}
+{% block body %}
+<!--幻灯片开始-->
+<div class="metFlash innerk">
+    <div class="flash">
+        <div class="flexslider flexslider_flash flashfld">
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                <ul class="slides list-none" style="width: 1200%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-1000px, 0, 0);">
+                    <li class="clone" style="width: 1000px; float: left; display: block;">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide1.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                    <li style="width: 1000px; float: left; display: block;" class="flex-active-slide">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide2.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                    <li style="width: 1000px; float: left; display: block;" class="">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide3.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                    <li style="width: 1000px; float: left; display: block;" class="">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide4.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                    <li style="width: 1000px; float: left; display: block;" class="">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide1.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                    <li style="width: 1000px; float: left; display: block;" class="clone">
+                        <a href="" target="_blank" title=""><img src='{% static "images/slide2.jpg" %}' alt="" width="1000" height="400"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="flex-direction-nav">
+                <li><a class="flex-prev" href="#">Previous</a></li>
+                <li><a class="flex-next" href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--幻灯片结束-->
+
+<!--新闻开始-->
+<section id="posts">
+    <div class="index">
+        <div class="indexLeft fl">
+		     <h3 class="indexTitle title1Img pr">
+			     走进我们<span>ABOUT US</span>
+			     <a href="company/company6.html" class="indexMore" title="走进我们" target="_self">更多&gt;&gt;</a>
+			 </h3>
+			 <div class="indexIntro editor clear"><img alt="" src="/static/images/2010.jpg" style="width: 148px; height: 125px; margin: 5px 6px; float: left;">&nbsp; &nbsp; &nbsp; &nbsp;2010年以来，我们环保涂料以令行业咋舌的姿态，第一家将真石漆搬上了央视这个在中国最热的媒体，同时，环保涂料亚洲真石漆最大研发生产基地在当地政府鼎力支持下，按计划顺利进行，设计日产能1000吨，年产能30万吨。<div class="clear"></div></div>
+		 </div>
+		 <div class="indexRight fr">
+		     <h3 class="indexTitle title2Img pr">
+			     产品中心<span>PRODUCTS</span>
+			     <a href="products/" class="indexMore" title="产品中心" target="_self">更多&gt;&gt;</a>
+			 </h3>
+			 <div class="indexProduct pr">
+                 <div class="flip">
+				     <p id="trigger"><a href="javascript:void(0);" target="_self" class="">1</a><a href="javascript:void(0);" target="_self" class="current">2</a><a href="javascript:void(0);" target="_self" class="">3</a><a href="javascript:void(0);" target="_self" class="">4</a><a href="javascript:void(0);" target="_self" class="">5</a></p>
+		             <!--<a class="prev" id="car_prev" href="javascript:void(0);"></a>
+			         <a class="next" id="car_next" href="javascript:void(0);"></a>-->
+		         </div>
+		         <div class="pr clear">
+			         <div class="profld pr" id="indexcar" data-listnum="3" style="height: 172px;">
+                     <ol class="list-none metlist" style="height: 172px; left: -178.30208349227905px;"><li class="list" style="height: 172px; margin: 0px 7.166666666666671px; position: relative; left: 0px;"><a href="/product_detail/" title="砂壁漆" target="_self" class="img"><img src="/static/images/product1.jpg" alt="砂壁漆" title="砂壁漆" width="162" height="135"></a><h3 style="width: 162px;"><a href="/product_detail/" title="砂壁漆" target="_self">砂壁漆</a></h3></li><li class="list" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="/product_detail/" title="地坪涂料" target="_self" class="img"><img src="/static/images/product2.jpg" alt="地坪涂料" title="地坪涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="/product_detail/" title="地坪涂料" target="_self">地坪涂料</a></h3></li><li class="list" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="/product_detail/" title="墙面涂料" target="_self" class="img"><img src="/static/images/product3.jpg" alt="墙面涂料" title="墙面涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="/product_detail/" title="墙面涂料" target="_self">墙面涂料</a></h3></li><li class="list" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="/product_detail/" title="功能涂料" target="_self" class="img"><img src="/static/images/product4.jpg" alt="功能涂料" title="功能涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="products/products2.html" title="功能涂料" target="_self">功能涂料</a></h3></li><li class="list" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="products/products1.html" title="保温涂料" target="_self" class="img"><img src="/static/images/product5.jpg" alt="保温涂料" title="保温涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="products/products1.html" title="保温涂料" target="_self">保温涂料</a></h3></li><li class="list clone" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="products/products8.html" title="砂壁漆" target="_self" class="img"><img src="/static/images/product1.jpg" alt="砂壁漆" title="砂壁漆" width="162" height="135"></a><h3 style="width: 162px;"><a href="products/products8.html" title="砂壁漆" target="_self">砂壁漆</a></h3></li><li class="list clone" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="products/products6.html" title="地坪涂料" target="_self" class="img"><img src="/static/images/product2.jpg" alt="地坪涂料" title="地坪涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="products/products6.html" title="地坪涂料" target="_self">地坪涂料</a></h3></li><li class="list clone" style="height: 172px; margin: 0px 7.166666666666671px; position: relative;"><a href="products/products3.html" title="墙面涂料" target="_self" class="img"><img src="/static/images/product3.jpg" alt="墙面涂料" title="墙面涂料" width="162" height="135"></a><h3 style="width: 162px;"><a href="products/products3.html" title="墙面涂料" target="_self">墙面涂料</a></h3></li></ol>
+			         </div>
+		         </div>
+			 </div>
+			 
+		 </div>
+		 <div class="clear"></div>
+     </div>
+</section>
+<!--新闻结束-->
+
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript">
+$(document).ready(function(){
+	// 幻灯片开启
+	$('.flashfld').flexslider({animation: 'slide', controlNav: false});
+})
+</script>
+{% endblock %}

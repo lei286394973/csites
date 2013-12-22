@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href='{% static "css/metinfo.css" %}'/>
+    <link rel="stylesheet" type="text/css" href='{% static "css/metinfo_ui.css" %}'/>
+    <link rel="stylesheet" type="text/css" href='{% static "css/flexslider.css" %}'/>
+    <script src='{% static "js/jQuery1.7.2.js" %}' type="text/javascript"></script>
+    <script src='{% static "js/jquery.flexslider-min.js" %}' type="text/javascript"></script>
+    {% block css %}{% endblock %}
+  </head>
+  <body>
+  {% include "nav.html" %}
+  {% block body %}{% endblock %}
+  {% include "footer.html" %}
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        // 导航事件
+        $("nav li[class!='line']").hover(
+	       function(){
+	           var likd=$(this).width(),dlkd=$(this).find('dl').width();
+               if(dlkd<=likd){$(this).find('dl').width(likd);}
+               else{
+		          $(this).find('dl').width(dlkd);
+			      var rckd=0,my=$(this).index();
+			      $('nav li').each(function(j){
+			         if(j>=my){
+				        rckd+=$(this).width();
+				     }
+				        return rckd;
+			      });
+			      var lfdkx=rckd-dlkd;
+			     if(lfdkx<0){ $(this).find('dl').css("left",lfdkx+'px');}
+		       }	
+               $(this).addClass('hover');		   
+	           $(this).find('dl').show();		   
+	       }
+	       ,
+	       function(){
+	           $(this).removeClass('hover');
+	           $(this).find('dl').hide();
+	       }
+	    );
+	    
+	    
+	    // 绑定左边的鼠标事件
+	    $('#sidebar dt')
+	    .bind('mouseover', function(){
+	        $('#sidebar dt').css({'backgroundColor': ''});
+	        $(this).css({'backgroundColor': 'lightgray'});
+	    })
+	    .bind('mouseout', function(){
+	        $('#sidebar dt').css({'backgroundColor': ''});
+	    })
+	    
+    })
+    </script>
+  {% block javascript %}{% endblock %}
+</html>

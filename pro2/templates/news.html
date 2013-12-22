@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}公司简介{% endblock %}
+
+{% block css %}
+<style>
+body{height: 100%}
+</style>
+{% endblock %}
+{% block body %}
+<!--正文上方广告-->
+<div class="metFlash innerk">
+    <div class="flash">
+        <div class="flexslider flexslider_flash flashfld">
+            <ul class="slides list-none">
+                <li style="display: list-item;">
+                    <a href="" target="_blank" title=""><img src="/static/images/ad.jpg" alt="" width="1000" height="250"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="sidebar innerk">
+    <!--左边内容-->
+    <div class="sb_nav fl">
+        <h3 class="sidebarTitle">走进我们</h3>
+        <div class="sbNavOne" id="sidebar" data-csnow="6" data-class3="0" data-jsok="2">
+            <dl class="list-none navnow">
+                <dt id="part2_6" class="on">
+                    <a href="../company/company6.html" class="zm"><span>公司新闻</span></a>
+                </dt>
+            </dl>
+            <dl class="list-none navnow">
+                <dt id="part2_7">
+                    <a href="../company/company7.html" class="zm"><span>行业资讯</span></a>
+                </dt>
+            </dl>
+            <dl class="list-none navnow">
+                <dt id="part2_8">
+                    <a href="../company/company8.html" class="zm"><span>政策法规</span></a>
+                </dt>
+            </dl>
+            <div class="clear"></div>
+        </div>
+
+        <h3 class="sidebarTitle line">联系方式</h3>
+        <div class="sbNavTwo editor">
+            <span style="line-height: 2;">
+                <strong>地址：</strong>四川省成都市高新开发区
+            </span>
+            <div><strong>电话：</strong>028-8888888 </div>
+            <div><strong>手机：</strong>13888888888</div>
+            <div><strong>联系人：</strong>陈先生</div>
+            <div><strong>邮政编号：</strong>610000</div>
+            <div><strong>网站：</strong>www.wangzhan.com</div>
+            <div><strong>邮箱：</strong>wangzhan@163.com</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!--右边内容-->
+    <div class="sb_box fr">
+	    <h3 class="boxTitle">
+			<div class="position">当前位置：<a href="../" title="首页">首页</a> &gt; <a href="../news/">新闻资讯</a></div>
+		</h3>
+		<div class="clear"></div>
+
+        <div class="active" id="newslist">
+			<ul class="list-none metlist">
+                <li class="list top">
+                    <span>[2013-11-25]</span>
+                    <a href="/news_detail/" title="国务院《绿色建筑行动方案》助力美丽中国建设" target="_self">国务院《绿色建筑行动方案》助力美丽中国建设</a>
+                </li>
+                <li class="list ">
+                    <span>[2013-11-25]</span>
+                    <a href="/news_detail/" title="“十二五”绿色建筑和绿色生态城区发展规划" target="_self">“十二五”绿色建筑和绿色生态城区发展规划</a>
+                </li>
+            </ul>
+			<div id="flip"><div class="digg4 metpager_8"><span class="disabled disabledfy"><b>«</b></span><span class="disabled disabledfy">‹</span><span class="current">1</span><span class="disabled disabledfy">›</span><span class="disabled disabledfy"><b>»</b></span></div></div>
+		</div>
+
+    </div>
+    
+    <div class="clear"></div>
+    
+</div>
+{% endblock %}

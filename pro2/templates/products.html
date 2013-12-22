@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}公司简介{% endblock %}
+
+{% block css %}
+<style>
+body{height: 100%}
+</style>
+{% endblock %}
+{% block body %}
+<!--正文上方广告-->
+<div class="metFlash innerk">
+    <div class="flash">
+        <div class="flexslider flexslider_flash flashfld">
+            <ul class="slides list-none">
+                <li style="display: list-item;">
+                    <a href="" target="_blank" title=""><img src="/static/images/ad.jpg" alt="" width="1000" height="250"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="sidebar innerk">
+    <!--左边内容-->
+    <div class="sb_nav fl">
+        <h3 class="sidebarTitle">产品中心</h3>
+        <div class="sbNavOne" id="sidebar" data-csnow="6" data-class3="0" data-jsok="2">
+            <dl class="list-none navnow">
+                <dt id="part2_6" class="on">
+                    <a href="../company/company6.html" class="zm"><span>强面涂料</span></a>
+                </dt>
+            </dl>
+            <dl class="list-none navnow">
+                <dt id="part2_7">
+                    <a href="../company/company7.html" class="zm"><span>功能涂料</span></a>
+                </dt>
+            </dl>
+            <dl class="list-none navnow">
+                <dt id="part2_8">
+                    <a href="../company/company8.html" class="zm"><span>环保涂料</span></a>
+                </dt>
+            </dl>
+            <div class="clear"></div>
+        </div>
+
+        <h3 class="sidebarTitle line">联系方式</h3>
+        <div class="sbNavTwo editor">
+            <span style="line-height: 2;">
+                <strong>地址：</strong>四川省成都市高新开发区
+            </span>
+            <div><strong>电话：</strong>028-8888888 </div>
+            <div><strong>手机：</strong>13888888888</div>
+            <div><strong>联系人：</strong>陈先生</div>
+            <div><strong>邮政编号：</strong>610000</div>
+            <div><strong>网站：</strong>www.wangzhan.com</div>
+            <div><strong>邮箱：</strong>wangzhan@163.com</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!--右边内容-->
+    <div class="sb_box fr">
+        <h3 class="boxTitle">
+            <div class="position">
+                当前位置：
+                <a href="../" title="首页">
+                    首页
+                </a>
+                &gt;
+                <a href="../products/">
+                    产品中心
+                </a>
+            </div>
+        </h3>
+        <div class="clear">
+        </div>
+        <div class="active" id="productlist">
+            <ul class="list-none metlist">
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="砂壁漆" target="_self" class="img">
+                        <img src="/static/images/p1.jpg" alt="砂壁漆" title="砂壁漆"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="products8.html" title="砂壁漆" target="_self">
+                            砂壁漆
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="真石漆" target="_self" class="img">
+                        <img src="/static/images/p2.jpg" alt="真石漆" title="真石漆"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="products7.html" title="真石漆" target="_self">
+                            真石漆
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="地坪涂料" target="_self" class="img">
+                        <img src="/static/images/p3.jpg" alt="地坪涂料" title="地坪涂料"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="products6.html" title="地坪涂料" target="_self">
+                            地坪涂料
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="墙面涂料" target="_self" class="img">
+                        <img src="/static/images/p4.jpg" alt="墙面涂料" title="墙面涂料"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="products5.html" title="墙面涂料" target="_self">
+                            墙面涂料
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="岩片漆" target="_self" class="img">
+                        <img src="/static/images/p5.jpg" alt="岩片漆" title="岩片漆"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="/product_detail/" title="岩片漆" target="_self">
+                            岩片漆
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="墙面涂料" target="_self" class="img">
+                        <img src="/static/images/p6.jpg" alt="墙面涂料" title="墙面涂料"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="/product_detail/" title="墙面涂料" target="_self">
+                            墙面涂料
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="功能涂料" target="_self" class="img">
+                        <img src="/static/images/p7.jpg" alt="功能涂料" title="功能涂料"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="/product_detail/" title="功能涂料" target="_self">
+                            功能涂料
+                        </a>
+                    </h3>
+                </li>
+                <li class="list" style="width: 164px; margin-left: 7px; margin-right: 7px; height: 170px;">
+                    <a href="/product_detail/" title="保温涂料" target="_self" class="img">
+                        <img src="/static/images/p8.jpg" alt="保温涂料" title="保温涂料"
+                        width="162" height="135">
+                    </a>
+                    <h3>
+                        <a href="/product_detail/" title="保温涂料" target="_self">
+                            保温涂料
+                        </a>
+                    </h3>
+                </li>
+            </ul>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+</div>
+{% endblock %}

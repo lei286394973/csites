@@ -1,0 +1,81 @@
+@charset "utf-8";
+html,body{font:12px/1.8 'Microsoft YaHei',Tahoma,Verdana,'Simsun'; color:#505050; background:#eaeaea; -webkit-text-size-adjust:none;}
+a{color:#505050; text-decoration:none;}
+a:hover{color:#F60; text-decoration:underline;}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative;}
+/*头部*/
+.inner{width:1258px; margin:0 auto; position:relative;}
+.innerk{width:1000px; margin:0 auto; position:relative;}
+header#page_header{min-height:150px; _height:150px; background:url(../images/headerbg.jpg); position:relative; z-index:10;}
+header#page_header .logo{width:350px; overflow:hidden;}
+header#page_header .navbg{background:url(../images/line.jpg) no-repeat right top;}
+header#page_header .metNav{width:646px; background:url(../images/line.jpg) no-repeat left top; padding-left:2px;}
+header#page_header .metNav .line{width:2px; height:150px; background:url(../images/line.jpg);}
+header#page_header .metNav .hover{background:url(../images/navhover.jpg) repeat-x left top;}
+header#page_header .metNav ul>li{white-space:nowrap; float:left; text-align:center; background:url(../images/navbg.jpg) repeat-x left top; position:relative;}
+*html header#page_header .metNav ul li{float:left; text-align:center; background:url(../images/navbg.jpg) repeat-x left top; position:relative;}
+header#page_header .metNav ul li a{color:#fff; font-size:14px; height:150px; line-height:150px; display:block;}
+*html header#page_header .metNav ul li a{overflow:hidden;}
+header#page_header .metNav ul>li>a{overflow:hidden;}
+header#page_header .metNav ul li a:hover{text-decoration:none;}
+header#page_header .metNav dl{display:none; position:absolute; top:150px; left:0px; background:url(../images/smenubg.png); padding:10px 0;}
+header#page_header .metNav dl dd a{white-space:nowrap; color:#fff; height:30px; line-height:30px; font-size:12px; font-weight:normal; padding:0 10px;}
+header#page_header .metNav dl dd a:hover{background:url(../images/headerbg.png);}
+.metFlash{margin-top:1px; width:1000px; overflow:hidden; font-size:0px;}
+section#posts .index{width:950px; margin:0 auto; position:relative; background:#fff; padding:25px;}
+section#posts .indexLeft{width:325px; overflow:hidden;}
+section#posts .indexTitle{white-space:nowrap; height:35px; font-size:14px; font-weight:bold; color:#202020; padding-left:42px;}
+section#posts .indexTitle span{color:#7ECAE4; font-size:8px; margin-left:10px;}
+section#posts .title1Img{background:url(../images/title1.jpg) left top;}
+section#posts .title2Img{background:url(../images/title2.jpg) left top;}
+section#posts .indexMore{float:right; width:35px; height:10px; line-height:1000px; overflow:hidden; background:url(../images/more.png); margin:8px 10px 0px 0px; _margin-top:-15px;}
+*+html section#posts .indexMore{margin-top:-15px;}
+section#posts .indexIntro{margin-top:10px;}
+section#posts .indexRight{width:600px;}
+section#posts .indexProduct{margin-top:20px; overflow:hidden; padding:0 25px 0 40px;}
+#indexcar ol{ position:absolute; width:2012em; }
+#indexcar ol li{ float:left; text-align:center; }
+#indexcar ol li a.img{ display:block; text-align:center; font-size:0px;}
+#indexcar ol li a.img img{ margin:auto; border:1px solid #d6d6d6;}
+#indexcar ol li h3{font-weight:normal; margin-top:5px; height:20px; line-height:20px; overflow:hidden;}
+section#posts .indexProduct .next,.indexProduct .prev{width:18px; height:26px; overflow:hidden; display:block; float:left; background:url(../images/arrow.png) no-repeat;}
+section#posts .indexProduct .next{background-position:-18px 0px; position:absolute; left:580px; top:55px; z-index:10;}
+section#posts .indexProduct .prev{background-position:0px 0px; position:absolute; left:15px; top:55px; z-index:10;}
+*html section#posts .indexProduct .next{position:absolute; left:540px; top:55px;}
+*html section#posts .indexProduct .prev{position:absolute; left:-20px; top:55px;}
+section#posts .indexProduct .profld{margin:0px; position:relative; overflow:hidden;}
+section#posts .indexProduct .profld h3{margin-top:15px;}
+#trigger{display:none; float:left; margin-right:5px; margin-top:0px; position:relative; bottom:8px; *bottom:0px; *top:5px; zoom:1;}
+#trigger a{ background:url(../images/neu.gif) no-repeat -78px -10px; width:8px; height:8px; font-size:0px; display:inline-block; overflow:hidden; margin-right:5px;}
+#trigger a.current{ background-position:-78px 0px;}
+footer#page_footer .metFoot{padding-top:15px; min-height:100px; _height:100px; background:url(../images/headerbg.jpg); text-align:center;}
+footer#page_footer .foot-nav{padding:0px 20px 0 20px;}
+footer#page_footer .foot-nav span{margin:0 16px; color:#bbb;}
+footer#page_footer .foot-nav a,.foot-text a{color:#BBB;}
+footer#page_footer .foot-text{padding:15px 20px 30px 20px; color:#bbb;}
+footer#page_footer .footLink{padding:0px 50px 10px 50px; color:#BBB; border:1px solid #1D1E22;}
+footer#page_footer .footLink h3{float:left; margin-right:10px;}
+footer#page_footer .WBtxt ul li{float:left; margin:3px 10px; line-height:18px; white-space:nowrap;}
+footer#page_footer .WBtxt ul li a{color:#BBB;}
+footer#page_footer .TUimg ul li{float:left; margin:5px 0 5px 12px; font-size:0px;}
+/*内页*/
+.sidebar{margin-top:1px; background:url(../images/sidebar.png) repeat-y left top;}
+.sb_nav{width:219px; padding-right:1px;}
+.sidebarTitle{color:#E0E0E0; font-size:14px; padding-left:35px; height:38px; line-height:36px; background:url(../images/sidebarTitle.png) no-repeat left top; overflow:hidden;}
+.sbNavOne{padding:15px 0 20px 0;}
+.sbNavOne dl dt{height:30px; line-height:30px; background:url(../images/listx.png) no-repeat left top; overflow:hidden;}
+.sbNavOne dl dt a{padding-left:60px; display:block; color:#505050;}
+.sbNavOne dl dt a:hover{background:url(../images/listx2.png) no-repeat left top; text-decoration:none;}
+.sbNavOne dl dd h4{height:30px; line-height:30px; background:url(../images/listx3.png) no-repeat left top; overflow:hidden;}
+.sbNavOne dl dd h4 span{font-weight:normal;}
+.sbNavOne dl dd a{padding-left:60px; display:block; color:#505050;}
+.sbNavOne dl dd a:hover{background:url(../images/listx4.png) no-repeat left top; text-decoration:none;}
+.sbNavTwo{padding:15px 20px 20px 20px;}
+.sb_box{width:779px; padding-left:1px;}
+.boxTitle{height:42px; line-height:38px; padding-left:38px; background:url(../images/boxTitle.png) no-repeat left top; overflow:hidden;}
+.active{background-color: white; padding:33px 33px 50px 33px !important;}
+.searchnavlist select{overflow:hidden; width:180px; white-space:nowrap; margin-left:20px;}
+.searchnavlist input{width:170px; margin-left:20px;}
+

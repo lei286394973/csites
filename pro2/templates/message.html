@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}公司简介{% endblock %}
+
+{% block css %}
+<style>
+body{height: 100%}
+</style>
+{% endblock %}
+{% block body %}
+<!--正文上方广告-->
+<div class="metFlash innerk">
+    <div class="flash">
+        <div class="flexslider flexslider_flash flashfld">
+            <ul class="slides list-none">
+                <li style="display: list-item;">
+                    <a href="" target="_blank" title=""><img src="/static/images/ad.jpg" alt="" width="1000" height="250"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="sidebar innerk">
+    <!--左边内容-->
+    <div class="sb_nav fl">
+        <h3 class="sidebarTitle">走进我们</h3>
+        <div class="sbNavOne" id="sidebar" data-csnow="6" data-class3="0" data-jsok="2">
+            <dl class="list-none navnow">
+                <dt id="part2_6" class="on">
+                    <a href="../company/company6.html" class="zm"><span>招商加盟</span></a>
+                </dt>
+            </dl>
+            <dl class="list-none navnow">
+                <dt id="part2_7">
+                    <a href="../company/company7.html" class="zm"><span>留言咨询</span></a>
+                </dt>
+            </dl>
+            <div class="clear"></div>
+        </div>
+
+        <h3 class="sidebarTitle line">联系方式</h3>
+        <div class="sbNavTwo editor">
+            <span style="line-height: 2;">
+                <strong>地址：</strong>四川省成都市高新开发区
+            </span>
+            <div><strong>电话：</strong>028-8888888 </div>
+            <div><strong>手机：</strong>13888888888</div>
+            <div><strong>联系人：</strong>陈先生</div>
+            <div><strong>邮政编号：</strong>610000</div>
+            <div><strong>网站：</strong>www.wangzhan.com</div>
+            <div><strong>邮箱：</strong>wangzhan@163.com</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!--右边内容-->
+    <div class="sb_box fr">
+	    <h3 class="boxTitle">
+			<div class="position">当前位置：<a href="../" title="首页">首页</a> &gt; <a href="../join/join23.html">加入我们</a> &gt; <a href="../message/">留言咨询</a></div>
+		</h3>
+		<div class="clear"></div>
+
+       <div class="active" id="messagelist">
+            
+
+        
+			<h3 class="ctitle">提交留言</h3>
+			<form method="POST" name="myform" onsubmit="return metmessagesubmit(&quot;姓名不能为空&quot;,&quot;留言信息不能为空&quot;);" action="../message/message.php?action=add" target="_self">
+<table class="message_table">
+<tbody><tr>
+<td class="text">姓名</td>
+<td class="input"><input name="pname" type="text" class="input-text"><span class="info">*</span></td>
+</tr>
+<tr>
+<td class="text">电话</td>
+<td class="input"><input name="tel" type="text" class="input-text"></td>
+</tr>
+<tr>
+<td class="text">Email</td>
+<td class="input"><input name="email" type="text" class="input-text"></td>
+</tr>
+<tr>
+<td class="text">其他联系方式</td>
+<td class="input"><input name="contact" type="text" class="input-text">如QQ、MSN等</td>
+</tr>
+<tr>
+<td class="text">留言内容</td>
+<td class="input"><textarea name="info" cols="50" rows="6" class="textarea-text"></textarea><span class="info">*</span></td>
+</tr>
+<tr><td class="text"></td><td class="submint">
+<input type="hidden" name="ip" value="113.246.8.20">
+<input type="hidden" name="lang" value="cn">
+<input type="submit" name="Submit" value="提交留言" class="submit button orange"></td></tr>
+</tbody></table>
+</form>
+
+        </div>
+
+    </div>
+    
+    <div class="clear"></div>
+    
+</div>
+{% endblock %}
